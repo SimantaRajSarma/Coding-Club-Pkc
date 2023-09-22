@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.body{
+    background-color: #00eeff;
+}
+.container{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    opacity: 99%;
+}
+.navbar{
+    display: flex;
+    background-color: rgba(128, 135, 160, 0.315);
+    width: 100%;
+    height: 11vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 9px #585879b0 ;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    padding: 0px 14px;
+}
+.navbar p{
+    font-size: 21px;
+    cursor: pointer;
+    padding: 0px 90px;
+    margin: 0px 23px;
+    color:#fff;
+    text-shadow: 2px 2px 11px#00eeff;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: #fff;
+    /* position: sticky; */
+    cursor: pointer;
+    padding: 0px 4px;
+}
+.navbar ul .item a:hover{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    border-width: 1.7px;
+    border-left: 0px;
+    border-right: 0px;
+    color: #ffffff;
+    text-shadow: 2px 2px 12px#00eeff;
+}
+.navbar ul .item1 a{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    border-width: 1.7px;
+    border-left: 0px;
+    border-right: 0px;
+    color: #ffffff;
+    text-shadow: 2px 2px 12px#00eeff;
+}
+
+
+.content{
+    color: white;
+    margin-top: 16.7vh;
+    margin-left: 29vh;
+}
+.content h1{
+    font-size: 40px;
+}
+.content ul{
+    margin-top: 44px ;
+}
+.content ul li{
+    margin: 20px 0px;
+    margin-left: 100px;
+    /* list-style: none; */
+    color: #3eebcb;
+}
+.content h1{
+    text-shadow: 2px 2px 11px#00eeff;
+    animation-name: h1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.content ul a{
+    color: #00eeff;
+    text-shadow: 2px 2px 7px#00eeff;
+}
+.content img{
+    position: absolute;
+    height: 60%;
+    bottom: 60px;
+    right: 33px;
+    /* top: 24px; */
+    opacity: 95%;
+    filter: drop-shadow(0px 0pc 2pc #0cffebc9);
+    animation-name: img;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes img{
+    0%{
+        height: 60%;
+    }
+    25%{
+        height: 75;
+        bottom: 26px;
+    }
+    75%{
+        height: 70%;
+    }
+    100%{
+        height: 60%;
+    }
+}
+@keyframes h1{
+    0%{
+        text-shadow: 2px 2px 6px#00eeff;
+    }
+    25%{
+        text-shadow: 2px 2px 15px#00eeff;
+    }
+    75%{
+        text-shadow: 2px 2px 27px#00eeff;
+    }
+    100%{
+        text-shadow: 2px 2px 6px#00eeff;
+    }
+}
